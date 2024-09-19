@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
     if (!is_number(argv[1]) || !is_number(argv[2])) 
     {
-    fprintf(stderr, "Error: Both arguments must be valid numbers.\n");
+    fprint("-ERROR-");
     return 1;
     }
     
