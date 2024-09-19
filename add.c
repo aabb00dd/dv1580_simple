@@ -13,12 +13,12 @@ int main(int argc, char *argv[])
     char *endptr;
     int num1 = strtol(argv[1], &endptr, 10);
     if (*endptr != '\0') {
-        fprintf(stderr, "Invalid integer: %s\n", argv[1]);
+        printf(-ERROR-);
         return 1;
     }
     int num2 = strtol(argv[2], &endptr, 10);
     if (*endptr != '\0') {
-        fprintf(stderr, "Invalid integer: %s\n", argv[2]);
+        printf(-ERROR-);
         return 1;
     }
 
