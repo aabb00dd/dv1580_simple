@@ -10,22 +10,28 @@ int main(int argc, char *argv[])
     }
 
     char *endptr;
-    int num1 = strtol(argv[1], &endptr, 10);
-    if (*endptr != '\0') 
-    {
-        printf("-ERROR-\n");
-        return 1;
-    }
-    
-    int num2 = strtol(argv[2], &endptr, 10);
+    double num1 = strtod(argv[1], &endptr);
     if (*endptr != '\0') 
     {
         printf("-ERROR-\n");
         return 1;
     }
 
-    int sum = num1 / num2;
-    printf("%d\n", sum);
+    double num2 = strtod(argv[2], &endptr);
+    if (*endptr != '\0') 
+    {
+        printf("-ERROR-\n");
+        return 1;
+    }
+
+    if (num2 == 0.0) 
+    {
+        printf("-ERROR-\n");
+        return 1;
+    }
+
+    double result = num1 / num2;
+    printf("%f\n", result);
 
     return 0;
 }
