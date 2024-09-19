@@ -10,22 +10,22 @@ int main(int argc, char *argv[])
     }
 
     char *endptr;
-    float num1 = strtod(argv[1], &endptr);
+    double num1 = strtod(argv[1], &endptr);
     if (*endptr != '\0') 
     {
         printf("-ERROR-\n");
         return 1;
     }
 
-    float num2 = strtod(argv[2], &endptr);
+    double num2 = strtod(argv[2], &endptr);
     if (*endptr != '\0') 
     {
         printf("-ERROR-\n");
         return 1;
     }
 
-    float result = num1 * num2;
-    printf("%f\n", result);
+    double result = num1 * num2;
+    printf("%0.1f\n", result);
 
     return 0;
 }
