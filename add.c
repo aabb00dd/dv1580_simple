@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     // Check if the number of arguments is correct
     if (argc != 3) {
-        fprintf(stderr, "-ERROR-\n");
+        fprintf(stderr, "-ERROR-");
         return 1;
     }
 
@@ -13,12 +13,12 @@ int main(int argc, char *argv[])
     char *endptr;
     int num1 = strtol(argv[1], &endptr, 10);
     if (*endptr != '\0') {
-        fprintf(stderr, "-ERROR-\n");
+        fprintf(stderr, "-ERROR-");
         return 1;
     }
     int num2 = strtol(argv[2], &endptr, 10);
     if (*endptr != '\0') {
-        fprintf(stderr, "-ERROR-\n");
+        fprintf(stderr, "-ERROR-");
         return 1;
     }
 
