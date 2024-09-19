@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
     if (!is_number(argv[1]) || !is_number(argv[2])) 
     {
-    fprint("-ERROR-");
+    printf("-ERROR-");
     return 1;
     }
     
