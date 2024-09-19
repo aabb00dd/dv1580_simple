@@ -3,13 +3,6 @@
 
 int main(int argc, char *argv[])
 {
-    
-    if(!isdigit(argv[1]) || !isdigit(argv[2]))
-    {
-        Print("ERROR")
-        break    
-    }
-    
     int num1 = atoi(argv[1]);
     int num2 = atoi(argv[2]);
     
