@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
     if (num2 == 0.0) 
     {
-        printf("-ERROR-\n");
+        printf("DIV ZERO NOT ALLOWED!\n");
         return 1;
     }
 
