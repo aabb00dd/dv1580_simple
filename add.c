@@ -8,5 +8,7 @@ int main(int argc, char *argv[])
 
   int sum = num1 + num2;
 
-  return sum;
+  printf("%d\n", sum);
+
+  return 0;
 }
